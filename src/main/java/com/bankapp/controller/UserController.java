@@ -46,7 +46,7 @@ public class UserController {
         AccountDto updatedAccount = userService.deposit(request);
         return ResponseEntity.ok(updatedAccount);
     }
-
+//withdraw ke liye
     @PostMapping("/accounts/withdraw")
     public ResponseEntity<AccountDto> withdraw(@Valid @RequestBody TransactionRequestDto request) {
         AccountDto updatedAccount = userService.withdraw(request);
